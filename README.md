@@ -1,1 +1,1 @@
-Hey this is our repo for SnapSecure!
+Hey this is our repo for SnapSecure! Let's use https://github.com/AsamK/signal-cli

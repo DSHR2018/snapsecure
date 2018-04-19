@@ -11,8 +11,9 @@ Signal-Cli install instructions:
   a-Download ZIP from [HERE!](https://github.com/AsamK/signal-cli)
   b-Unzip file
   c-move signal-cli to desktop
-  d-open terminal
+  d-Open Terminal/Command line (application)
   e-
+
         $ cd Desktop/signal-cli
 
 OR

@@ -1,2 +1,3 @@
-fabric
-tornado
+fabric - [http://www.fabfile.org/]
+tornado - [http://www.tornadoweb.org/en/stable/]
+signal-cli - [https://github.com/AsamK/signal-cli]

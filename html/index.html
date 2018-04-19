@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+<div id="chat_list">
+	<ul>
+		<li id="new_chat">New chat...</li>
+		{% for chat in chats %}
+			<li class="expand_chat_{{ chat['from_alias'] }}">
+				{{ chat['envelope_from'] }} : {{ chat['body'] }}
+			</li>
+		{% end %}
+	</ul>
+</div>
+
+{% end %}

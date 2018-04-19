@@ -5,43 +5,44 @@ This codebase contains plenty of bugs, and glaring security holes. But hey, that
 Some of the most glaring errors are marked `XXX`, and feel free to open issues and pull requests with your questions, fixes, and discussions.
 
 
+#Dependency Instructions
 
-Signal-Cli install instructions:
-1-Download File:
-  a-Download ZIP from [HERE!](https://github.com/AsamK/signal-cli)
-  b-Unzip file
-  c-move signal-cli to desktop
-  d-Open Terminal/Command line (application)
-  e-
+##Signal-Cli install instructions:
+###1. Download File:
+    1. Download ZIP from [HERE!](https://github.com/AsamK/signal-cli)
+    2. Unzip file
+    3. Move signal-cli to desktop
+    4. Open Terminal/Command line (application)
+    5.
 
         $ cd Desktop/signal-cli
 
-OR
+####OR
 
-  Git:
+###Git:
   Checkout the source somewhere on your filesystem with
 
       $ git clone https://github.com/AsamK/signal-cli.git
       $ cd signal-cli
 
-2-Execute Gradle:
+###2. Execute Gradle:
 
       $ ./gradlew build
 
-  -may ask for you to download java
-[link](http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html)
+  - May instruct you to [download java](http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html)
 
-3-Create shell wrapper in build/install/signal-cli/bin:
+###3. Create shell wrapper in build/install/signal-cli/bin:
 
       $ ./gradlew installDist
 
-4-Create tar file in build/distributions:
+###4. Create tar file in build/distributions:
 
       $ ./gradlew distTar
 
-Maybe needed
-5-Possible fix if you receive signal-cli command not found:
-    navigate to the bin folder
+#####Maybe needed
+
+###5. Possible fix if you receive signal-cli command not found:
+    * navigate to the bin folder
 
       $ cd signal-cli/build/install/signal-cli/bin
       $ Export PATH for signal-Cli

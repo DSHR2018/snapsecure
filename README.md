@@ -27,7 +27,7 @@ OR
 
       $ ./gradlew build
 
-    -may ask for you to download java
+  -may ask for you to download java
 [link](http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html)
 
 3-Create shell wrapper in build/install/signal-cli/bin:

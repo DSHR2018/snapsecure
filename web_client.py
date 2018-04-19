@@ -1,7 +1,6 @@
 from time import sleep
 import tornado.ioloop, tornado.web, tornado.httpserver, tornado.template
 from signal_client import SignalClient
-import views
 
 
 class WebClient(tornado.web.Application):
@@ -15,8 +14,8 @@ class WebClient(tornado.web.Application):
 			(r"/new", self.ChosseFriendsHandler)
 		]
 
-		tornado.web.Application.__init__(self, routes, ui_modules=views, template_path="html")
-		
+		tornado.web.Application.__init__(self, routes, template_path="html")
+
 		self.listen(port)
 		tornado.ioloop.IOLoop.current().start()
 
@@ -50,7 +49,7 @@ class WebClient(tornado.web.Application):
 				self.set_cookie("username", username)
 				self.redirect("/verify")
 				return
-			
+
 			sleep(4)
 			self.redirect("/register")
 

@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+<p>Enter your verification code</p>
+<form method="POST" action="/verify">
+	<input type="text" name="verification_code" />
+	<input type="submit" value="verify">
+</form>
+
+{% end %}

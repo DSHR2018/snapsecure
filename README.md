@@ -36,3 +36,22 @@ Maybe needed
 
       Export PATH for signal-Cli
       $ export PATH=$PATH:/$(pwd)
+
+
+
+
+
+**Reine's instructions for getting a Twilio number**
+
+Go to 
+
+[link](https://www.twilio.com/try-twilio) 
+
+And sign up for an account.
+
+Next - click the # icon in the left toolbar and select **Buy a Number**
+
+Click the MMS box and hit enter. 
+
+Choose a phone number.
+

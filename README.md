@@ -8,12 +8,14 @@ Some of the most glaring errors are marked `XXX`, and feel free to open issues a
 #Dependency Instructions
 
 ##Signal-Cli install instructions:
+
 ###1. Download File:
+
     1. Download ZIP from [HERE!](https://github.com/AsamK/signal-cli)
     2. Unzip file
     3. Move signal-cli to desktop
     4. Open Terminal/Command line (application)
-    5.
+    5. 
 
         $ cd Desktop/signal-cli
 

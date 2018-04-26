@@ -1,0 +1,75 @@
+body{
+	background-color: #ff4447;
+	width:100%;
+	height: 100%;
+	margin:0px;
+	border: 0px; 
+   transform-origin: 0 0;
+   overflow:scroll;
+    overflow-x:hidden;
+    overflow-y: hidden;
+}
+#logo {
+	height: 100px;
+	width: 150px;
+	 margin: 0px auto;
+}
+/*#video {
+	height: 480px;
+	width: 640px;
+}*/
+#canvas{
+	height:615px;
+	width: 600px;
+	background-color: #ff9f44;
+	position: relative;
+	border:none;
+	margin-bottom: none;
+	bottom:0px;
+	left:50px;
+
+}
+#snap{
+	height:10%;
+	position:absolute;
+	bottom: 7px;
+	left:49%;
+}
+#logo {
+	height: 10%;
+	width: 10%;
+	position: absolute;
+	position:absolute;
+	top: 10px;
+	left:45%;
+}
+#chat {
+	height: 10%;
+	width: 10%;
+	position: absolute;
+	position:absolute;
+	bottom: 7px;
+	right:28%;
+
+}
+#arrows {
+	height: 10%;
+	width: 10%;
+	position: relative;
+	position:absolute;
+	bottom: 11px;
+	left:30%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

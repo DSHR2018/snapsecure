@@ -1,8 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Snapsecure | {{ title }}</title>
+		<script type="text/javascript">
+function login() {
+    document.getElementById("login").style.display = "none";
+    document.getElementById('input').style.display = "block";
+}
+var input = document.getElementById("input");
+input.addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) {
+        create(e);
+    }
+});
+
+function create(e) {
+    window.location = 'snapsecure2.html';
+}
+function glow() {
+	 document.getElementById("login").style.border = "10px 20px 30px blue";
+}
+
+</script>
 	</head>
 	<body>
 		<h1>{{ title }}</h1>
@@ -11,5 +32,14 @@
 				default
 			{% end %}
 		</div>
+		
+<img id="logo" src="file:////Users/orideangelis/Documents/snapsecureapp/images/logo.jpg" alt="logo">
+<img id="login" onclick="login();" onmouseover="glow();" src="file:////Users/orideangelis/Documents/snapsecureapp/images/login.jpg">
+<form id="input" class="input">
+  Username:<br>
+  <input id="username" type="text"><br>
+  Password:<br>
+  <input id="password" type="text">
+</form>
 	</body>
 </html>

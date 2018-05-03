@@ -11,7 +11,8 @@ class WebClient(tornado.web.Application):
 			(r"/register", self.RegistrationHandler),
 			(r"/verify", self.VerificationHandler),
 			(r"/chat/([a-z0-9]+)", self.ChatHandler),
-			(r"/new", self.ChosseFriendsHandler)
+			(r"/new", self.ChosseFriendsHandler),
+			(r"/webcam", self.WebCamHandler)
 		]
 
 		tornado.web.Application.__init__(self, routes, template_path="html")
@@ -67,6 +68,10 @@ class WebClient(tornado.web.Application):
 
 			sleep(4)
 			self.redirect("/register")
+
+	class WebCamHandler(WebAppTemplate):
+		def get(self):
+			super(WebClient.WebCamHandler, self).get("webcam.html", title="Snap a photo")
 
 	class ChatHandler(WebAppTemplate):
 		def get(self):

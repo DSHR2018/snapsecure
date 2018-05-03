@@ -2,10 +2,18 @@
 
 {% block content %}
 
-<p>Register your phone number</p>
-<form method="POST" action="/register">
-	<input type="text" name="phone_number" />
-	<input type="submit" value="register">
-</form>
+  <div class="phone-screen">
+    <img id="logo" src="images/logo.jpg" alt="logo">
+    <div class="white-screen">
+      <img id="login" onclick="login();" onmouseover="glow();" src="images/login.jpg">
+      <form id="input" class="input" action="/register" method="POST">
+        Phone Number:<br>
+        <input id="username" type="text"><br> Password:
+        <br>
+        <input id="password" type="text">
+      </form>
+    </div>
+
+  </div>
 
 {% end %}

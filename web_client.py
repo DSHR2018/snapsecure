@@ -73,6 +73,17 @@ class WebClient(tornado.web.Application):
 			chat_id = None
 			super(WebClient.ChatHandler, self).get("chat.html", title="Chat with %s" % chat_id)
 
+		def post(self):
+			try:
+				### grab raw webcam data and push to signal cli
+				raw_webcam_data = self.get_argument('raw_webcam_data')
+				if self.scli_post_image(raw_webcam_data):
+					### do some sort of confirmation
+					pass
+
+			except Exception as e:
+				print e, type(e)
+
 	class ChosseFriendsHandler(WebAppTemplate):
 		def get(self):
 			super(WebClient.ChosseFriendsHandler, self).get("choose_friends.html", title="Choose Friends...")

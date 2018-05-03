@@ -58,6 +58,15 @@ class SignalClient():
 
 		return None
 
+	def scli_post_image(self):
+		try:
+			### send off the image to all the people
+			return True
+		except Exception as e:
+			print e, type(e)
+
+		return False
+
 	def scli_poll_messages(self):
 		try:
 			return [self.__message_to_dict(raw_message) for raw_message in [m.split('\n') for m in self.__run_scli_cmd("receive").split('\n\n')]]

@@ -2,18 +2,17 @@
 
 {% block content %}
 
-  <div class="phone-screen">
-    <img id="logo" src="images/logo.jpg" alt="logo">
-    <div class="white-screen">
-      <img id="login" onclick="login();" onmouseover="glow();" src="images/login.jpg">
-      <form id="input" class="input" action="/register" method="POST">
-        Phone Number:<br>
-        <input id="username" type="text"><br> Password:
-        <br>
-        <input id="password" type="text">
-      </form>
-    </div>
-
-  </div>
+<div class="phone-screen">
+	<img id="logo" src="images/logo.jpg" alt="logo">
+	<div class="white-screen">
+		<img id="login" onclick="login();" onmouseover="glow();" src="images/login.jpg">
+		<form id="input" class="input" action="/register" method="POST">
+			Phone Number:<br>
+			<input id="username" type="text"><br>
+			Password:<br>
+			<input id="password" type="text">
+		</form>
+	</div>
+</div>
 
 {% end %}

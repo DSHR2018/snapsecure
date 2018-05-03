@@ -1,0 +1,160 @@
+body{
+	width:100%;
+	height: 100%;
+	margin:0px;
+	border: 0px; 
+   transform-origin: 0 0;
+   overflow:scroll;/*
+    overflow-x:hidden;
+    overflow-y: hidden;*/
+}
+.body-div {
+	background-color: rgba(255, 68, 71, 0.05);
+}
+
+.zindex{
+	margin-top: 20px;
+	z-index: 1; 
+}
+.page-header {
+	font-family: Futura;
+	margin-top: 40px;
+	font-weight: 600;
+	font-size: 30px;
+	width: 10px;
+}
+
+.page-header-description {
+	margin-top: 10px;
+	font-family: Futura;
+	font-weight: 100;
+	font-size: 13px;
+	width: 30%;
+}
+
+.github-link {
+	color: blue;
+	bottom: 20px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	text-align: right;
+	font-family: Futura;
+	margin-top: 10px;
+	float: left;
+}
+
+.github-link:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+#send {
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	font-family: Futura;
+	border-radius: 25px;
+	border-color: #ff4447;
+	background-color: #ff4447;
+	border-radius: 50px;
+	position: absolute;
+	margin-left: 260px;
+	margin-top:30px;
+	height: 60px;
+	width: 60px;
+}
+#send:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+
+.white-screen {
+	margin-top: -100px;
+	border-radius: 32px;
+	background-color: white;
+	border-radius: 25px;
+	position: absolute;
+	margin-right: 0px;
+	height: 94px;
+	width: 227.5px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+.button{
+	margin-top: -110px;
+	border-radius: 32px;
+	background-color: white;
+	border-radius: 25px;
+	position: absolute;
+	margin-left: 0px;
+	height: 100px;
+	width: 60px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+.phone-screen {
+	z-index: 4;
+	margin-top: -120px;
+	border-radius: 32px;
+	position: absolute;
+	margin-left: 40%;
+	background-color: white;
+	border: 4px #2e4be8;
+	height: 575.8px;
+	width: 337.5px;
+	-webkit-box-shadow: 32px 31px 82px 3px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 32px 31px 82px 3px rgba(0, 0, 0, 0.4);
+	box-shadow: 32px 31px 82px 3px rgba(0, 0, 0, 0.4);
+}
+.key{
+	z-index: 4;
+	margin-top: -570px;
+	border-radius: 25px;
+	position: absolute;
+	margin-left: 80%;
+	background-color: #ff4447;
+	border: 4px #2e4be8;
+	height: 50px;
+	width: 50.5px;
+}
+.arrows{
+	z-index: 4;
+	margin-top: -570px;
+	border-radius: 25px;
+	position: absolute;
+	margin-left: 10%;
+	background-color: #ff4447;
+	border: 4px #2e4be8;
+	height: 50px;
+	width: 50.5px;
+}
+#arrows{
+	height: 40px;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+#wireframe{	
+	height: 575.8px;
+	width: 337.5px;
+	border-radius: 25px;
+}
+#key{
+	height: 40px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+#text-box{
+	margin-top: -100 px;
+	border-radius: 32px;
+	background-color: white;
+	border-radius: 25px;
+	position: absolute;
+	margin-left: 5px;
+	height: 80px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	font-size: 20px;
+	text-align: left;
+	font-family: Futura;
+	width: 227.5px;
+}

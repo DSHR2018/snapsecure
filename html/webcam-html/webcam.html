@@ -24,13 +24,11 @@
 
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
 
-if (navigator.getUserMedia) {
-	navigator.getUserMedia({video: true}, handleVideo, videoError);
-}
-
-function handleVideo(stream) {
+if (navigator.getUserMedia) {       
+ navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
  video.src = window.URL.createObjectURL(stream);
  video.play();
+ });
 }
 
 function videoError() {
